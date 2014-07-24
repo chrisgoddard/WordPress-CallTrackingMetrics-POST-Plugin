@@ -2,6 +2,35 @@
 
 namespace CallTrackingMetrics;
 
+/*
+	WpExternalApi class use
+	
+	$api = WpExternalApi::get('url-slug');
+	
+	will create endpoint at www.example.com/url-slug/json and www.example.com/url-slug/xml
+	
+	$api->set_logic(callback);
+	
+	function callback($input){
+	
+		// Return variable will be encoded into JSON or XML response
+		
+		// e.g. 
+		
+		return array('status'=>'OK'); // {'status':'OK'}
+		
+		// For XML, use nested arrays to create structure - set xml_parent_node for top level node, default is <Response>
+		
+		return array('status'=>array('value'=>'OK', 'attributes'=>array('really'=>'ok'))); 
+		
+		// <Response><Status really="ok">Ok</Status></Response>
+		
+	}
+
+
+*/
+
+
 class WpExternalApi
 {
 
