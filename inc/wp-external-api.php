@@ -1,6 +1,6 @@
 <?php
 
-namespace CallLogCRM;
+namespace CallTrackingMetrics;
 
 class WpExternalApi
 {

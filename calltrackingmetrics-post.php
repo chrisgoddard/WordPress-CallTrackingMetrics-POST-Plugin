@@ -23,7 +23,7 @@ class CallLogCrm
 
 		include trailingslashit(plugin_dir_path(__FILE__)) . 'inc/wp-external-api.php';
 
-		$this->api = CallLogCRM\WpExternalApi::get('calltrackingmetrics');
+		$this->api = CallTrackingMetrics\WpExternalApi::get('calltrackingmetrics');
 
 		$this->api->set_logic(array($this, 'process_call'));
 
